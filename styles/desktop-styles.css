@@ -1,0 +1,19 @@
+@media screen and (min-width: 1200px) {
+  .nav-list {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    gap: 2.222dvh;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: none !important;
+  }
+
+  .collapsible-content {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
