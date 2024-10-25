@@ -2,7 +2,7 @@ function not_avaliable() {
   alert("Function is currently unavaliable");
 }
 
-function test() {
+function menu_collapse() {
   const collapsible = document.querySelector(".collapsible");
   collapsible.classList.toggle("collapsible-expanded");
 }

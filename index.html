@@ -17,6 +17,18 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,32 +42,47 @@
     <nav>
       <h1>CARMORE</h1>
       <div class="menu collapsible collapsible-expanded">
-        <button class="menu-icon" onclick="test()">
+        <button class="menu-icon" onclick="menu_collapse()">
           <box-icon name="menu" color="#7c7b74"></box-icon>
         </button>
         <ul class="nav-list collapsible-content">
           <div class="nav-list-item nli-st">
             <ul>
-              <span>Home</span>
+              <a href="#home"> <span>Home</span></a>
             </ul>
           </div>
           <div class="nav-list-item">
             <ul>
-              <span>About</span>
+              <a href="#about"> <span>About</span></a>
             </ul>
           </div>
           <div class="nav-list-item">
             <ul>
-              <span>Contact</span>
+              <a href="#contact"><span>Contact</span></a>
             </ul>
           </div>
           <div class="nav-list-item">
             <ul>
-              <span>Account</span>
+              <a href="#"><span>Account</span></a>
             </ul>
           </div>
         </ul>
       </div>
     </nav>
+    <section id="home">
+      <div class="home-text">
+        <span
+          >RENT<br />
+          A CAR FOR<br />
+          <span class="home-text-special">YOUR</span><br />
+          JOURNEY</span
+        >
+      </div>
+      <div class="rent-box-button">
+        <button class="home-button">
+          <span class="home-button-text">RENT</span>
+        </button>
+      </div>
+    </section>
   </body>
 </html>

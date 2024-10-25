@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--dark-backround);
+}
+
 :root {
   --dark-backround: #191918;
   --dark-logo-text: #7c7b74;
   --dark-text: #b5b3ad;
   --dark-interactive-bg: #31312e;
+  --dark-special: #494844;
 }
 
 nav {
@@ -59,22 +64,29 @@ h1 {
 }
 
 .collapsible-content {
+  transition: max-height 0.3s ease-in-out, width 0.3s ease-in-out; /* Added width transition */
+  margin-top: 2.3rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, width 0.3s ease;
   width: 100%;
+  position: absolute;
+  left: 0;
 }
 
 .collapsible-expanded {
   max-height: 100vh;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 0;
+  position: fixed;
+  left: 0;
 }
 
 .collapsible-expanded .collapsible-content {
   max-height: 100vh;
   width: 100%;
+  position: absolute;
+  left: 0;
 }
 
 .menu-icon {
@@ -88,4 +100,44 @@ h1 {
   margin: 0.8rem 0 0 17.5rem;
   display: block;
   cursor: pointer;
+}
+
+.home-text {
+  margin-top: 37px;
+  margin-left: 50px;
+}
+
+.home-text span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--dark-text);
+  font-size: 48px;
+}
+
+.home-text .home-text-special {
+  font-weight: 400;
+  color: var(--dark-special);
+}
+
+.rent-box-button {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-button {
+  width: 259px;
+  height: 70px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--dark-interactive-bg);
+  cursor: pointer;
+}
+
+.home-button-text {
+  color: var(--dark-text);
+  font-size: 40px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 200;
 }
